@@ -5,8 +5,8 @@
 }
 
 img {
-    width: 800px;
-    margin: 10%;
+    width: 400px;
+    margin: 30px;
     padding: var(--spacing);
     background: var(--base);
     filter: blur(var(--blur));
