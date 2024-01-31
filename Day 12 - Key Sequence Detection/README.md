@@ -9,4 +9,4 @@ Unveiling today's enchanting JavaScript project! ✨🖥️ With a wave of code,
 
 Embarking on the whimsical side of coding, where the screen transforms into a canvas of magical possibilities with a secret incantation. ✨🚀
 
-#JavaScriptJourney #MagicalCoding #UnicornMagic #Day12 #CodeEnchantment 🚀🦄
+#Day12 #Javascript30 #MagicalCoding #UnicornMagic #CodeEnchantment 🚀🦄
