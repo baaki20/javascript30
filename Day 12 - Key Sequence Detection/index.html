@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Key Detection</title>
+    <script src="./cornify.js" type="text/javascript"></script>
+    <link rel="icon" href="https://fav.farm/🔥" />
+  </head>
+  <body>
+    <script>
+        const pressed = [];
+        const secretCode = "baaki";
+
+        
+        function checkSecretCode (array) {
+                if (array.join("").includes(secretCode)) {
+                    console.log("Yay");
+                    cornify_add();
+                }
+        }
+
+        function handleKeyUp(e) {
+            pressed.push(e.key);
+            console.log(e.key);
+            
+            /*
+            pressed.splice((-secretCode.length -1), pressed.length - secretCode.length);
+
+            if (pressed.join("").includes(secretCode)) {
+                console.log("Yay!");
+                cornify_add();
+            }
+            */
+
+            if (pressed.length === secretCode.length) {
+                checkSecretCode(pressed);
+            } else if (pressed.length > secretCode.length) {
+                pressed.splice(0, 1);
+                checkSecretCode(pressed);
+            }
+
+            console.log(pressed);
+            
+        }
+
+        window.addEventListener('keyup', handleKeyUp);
+    </script>
+  </body>
+</html>
