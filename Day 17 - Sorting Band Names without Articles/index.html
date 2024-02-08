@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sort Without Articles</title>
+    </head>
+    <body>
+
+        <ul class="band">
+            <li>Go</li>
+            <li>Come</li>
+        </ul>
+
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0;
+                background: url('https://source.unsplash.com/nDqA4d5NL0k/2000x2000');
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            .band {
+                font-size: 20px;
+                background-color: white;
+                min-width: 500px;
+                border-radius: 2px;
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+                list-style: inside square;
+                padding: 0;
+            }
+
+            .band li {
+                border-bottom: 3px solid #efefef;
+                padding: 20px;
+            }
+
+            .band li:last-child {
+                border-bottom: 0;
+            }
+        </style>
+            
+        <script>
+            const band = document.querySelector('.band');
+
+            const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+
+            function strip(bandName) {
+                return bandName
+                        .replace(/^(a |an |the)/i, '')
+                        .trim();
+            }
+
+            const sortedBand = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);
+
+            band.innerHTML = 
+                sortedBand
+                .map(band => `<li>${band}</li>`)
+                .join('');
+            
+        </script>
+
+    </body>
+</html>
