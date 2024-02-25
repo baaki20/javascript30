@@ -1,4 +1,4 @@
-🚀 Day 22 of 30 Days of JavaScript Journey 🚀
+🚀 **Day 22 of 30 Days of JavaScript Journey** 🚀
 
 Today, I implemented a feature where links on the page dynamically highlight when hovered over, offering visual feedback and improving navigational clarity. A small detail that elevates the browsing experience! 🌐💡
 
