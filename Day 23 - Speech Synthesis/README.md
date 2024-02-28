@@ -6,4 +6,4 @@ Implemented a dynamic feature where users can input text, and the computer seaml
 
 Harnessing the capabilities of JavaScript to enhance accessibility and user engagement, we're breaking barriers and creating inclusive experiences for all. 💻🌐
 
-#Day #JavaScript30 #SpeechSynthesis
+#Day23 #JavaScript30 #SpeechSynthesis
