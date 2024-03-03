@@ -4,4 +4,4 @@ Today's project brought forth a seamless navigation experience, enhancing user i
 
 Crafted a floating navigation bar that gracefully transitions to a fixed position as we scroll past its initial placement. Accompanied by an elegant logo transition and expansion of the page size, this feature elevates the browsing experience to new heights! 🛳️🖼️
 
-#JavaScript #WebDesign #UserExperience #Innovation #ProgrammingJourney #SoftwareEngineering
+#Day24 #JavaScript30 #UserExperience
