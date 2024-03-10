@@ -3,9 +3,9 @@ const speed = document.querySelector('.speed');
 const bar = document.querySelector('.speed-bar');
 
 let isClicked = false;
-const defaultPlaybackSpeed = 1 // 1.0x
 const minSpeed = 0.2;
 const maxSpeed = 4;
+const defaultPlaybackSpeed = video.playbackRate // 1.0x
 let height = (defaultPlaybackSpeed - minSpeed) / (maxSpeed - minSpeed);
 
 function handleSpeed(e) {
